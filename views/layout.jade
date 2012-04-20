@@ -1,0 +1,18 @@
+!!! 5
+html(lang='nl')
+  head
+    meta(charset='utf8')
+    title GMChat: Pong (By Sander Bakkum and Jesse Degger)
+    link(rel='stylesheet', href='/style/style.css')
+    script(src='/lib/mootools.js')
+    script(src='/socket.io/socket.io.js')
+    script
+      window.pongConfig = { 
+        'gameID':    '#{gameID}',
+        'playerID':  '#{playerID}',
+        'player1':   '#{player1}',
+        'player2':   '#{player2}',
+        'handshake': '#{handshake}'
+      }
+    script(src='/script/pong.js')
+  body!= body
